@@ -32,6 +32,10 @@ public class SecurityConfig {
                 .httpBasic().disable()
                 .authorizeRequests()
                 .antMatchers(
+                        "/api/v1/address",
+                        "/api/v1/region",
+                        "/api/v1/food",
+                        "/api/v1/order",
                         "/api/v1/authorization/login",
                         "/api/v1/authorization/authToken",
                         "/v2/api-docs",             // swagger
